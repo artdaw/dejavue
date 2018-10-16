@@ -1,7 +1,5 @@
 import { curry } from 'ramda';
 
-// PARTIALLY APPLIED SPLIT
+// partially applied split
 const split = curry((delimiter, str) => str.split(delimiter));
-const splitBySpace = split(' ');
-
-splitBySpace('Split me!'); // ["Split", "me!"]
+export const splitBySpace = split(' ');
