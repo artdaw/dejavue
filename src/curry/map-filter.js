@@ -1,7 +1,7 @@
 import { curry, compose, map, filter } from 'ramda';
 import { isOdd } from './modulo';
 
-const getProp = curry((prop, object) => object[prop]);
+export const getProp = curry((prop, object) => object[prop]);
 
 /* instead of pasing function definition to the .map(),
   we first define curried function which takes prop and object,
