@@ -7,7 +7,8 @@ export const getProp = curry((prop, object) => object[prop]);
   we first define curried function which takes prop and object,
   and call it with the prop we want to map to. This will
   return the function which takes the object and returns
-  the value of the prop that we first passed. */
+  the value of the prop that we first passed. This is
+  an equivalent to Ramda's 'prop' method */
 export const mapToIds = map(getProp('id'));
 
 /* filtering by composing functions getProp and isOdd,
